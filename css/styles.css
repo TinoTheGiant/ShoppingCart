@@ -1,0 +1,213 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Playball&family=Roboto&family=Teko&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz@12..96&display=swap');
+
+html {
+    height: 100%;
+    margin: 0;
+    scroll-behavior: smooth;
+}
+
+:root {
+    box-sizing: border-box;           
+  }
+  
+  *,
+  ::before,
+  ::after {
+    box-sizing: inherit;              
+  }
+
+header{
+    
+font-family: 'Roboto', sans-serif;
+    background-color: #2E3CFF;
+    color: whitesmoke;
+    text-align: center;
+    padding: 10px;
+    
+}
+
+body{
+    background-color: white;
+    font-size: larger;
+    color:black;
+
+}
+
+.footer p,a,h3 {font-family: 'Roboto', sans-serif;}
+
+.user-card p{
+    font-size: 30px;
+    font-family: 'Playball', cursive;
+
+}
+
+#container p{
+    font-family: 'Bricolage Grotesque', sans-serif;
+}
+
+  h2{
+    font-family: 'Roboto', sans-serif;
+    padding: 25px;
+    margin:10px;
+    
+    
+  }
+
+
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 20px;
+    margin:30px;
+}
+
+.product {
+    border: 1px solid #ccc;
+    padding: 10px;
+    text-align: center;
+    transition: transform 0.3s ease;
+}
+
+.product:hover {
+    transform: scale(1.05);
+    cursor: pointer;
+}
+
+img{
+    max-width: 30%;
+    max-height: 200px;
+    
+}
+
+
+
+
+.footer {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    background-color: #2E3CFF;
+    padding: 20px;
+    text-align: center;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+    color: ghostwhite;
+}
+
+.column {
+    padding: 10px;
+    
+}
+
+.footer ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.footer ul li a{
+    color: ghostwhite;
+}
+
+.copyright {
+    text-align: center;
+    font-size: 14px;
+    color: ghostwhite;
+    margin-top: 20px;
+}
+
+.user-card {
+    background-color: #f9f9f9;
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    max-width: 300px;
+    margin: 0 auto;
+}
+
+#user-image {
+    display: block;
+    margin: 0 auto;
+    border-radius: 50%;
+    max-width: 150px;
+}
+
+
+
+#cart-container{
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    grid-gap: 20px;
+    margin:30px;
+}
+
+#cart{
+    text-align: center;
+    margin: 0 auto;
+    font-family: 'Bricolage Grotesque', sans-serif;
+}
+
+option,select{
+    text-align: center;
+    background-color: #2E3CFF;
+    color: aliceblue;
+    border: #2E3CFF 3px solid;
+    font-family: 'Bricolage Grotesque', sans-serif;
+}
+
+label{
+    font-family: 'Bricolage Grotesque', sans-serif;
+}
+
+button{
+    border: #2E3CFF solid 1px;
+    color: #2E3CFF;
+    font-family: 'Bricolage Grotesque', sans-serif;
+    border-radius: 100px;
+    padding: 10px;
+    margin: 5px;
+    width: 40%;
+    font-size: 1.25rem;
+    transition: transform 0.5s ease;
+}
+
+button:hover{
+    color: white;
+    background-color: #2E3CFF;
+    border: midnightblue solid 1px;
+}
+
+p{
+    font-family: 'Bricolage Grotesque', sans-serif;
+    font-size: 1.5rem;   
+   
+}
+
+@media screen and (max-width: 768px) {
+    .grid-container {
+        grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+    }
+
+    #cart-container{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-gap: 10px;
+        margin:8px;
+    }
+
+    .footer {
+        grid-template-columns: 1fr;
+    }
+
+    .footer .column {
+        text-align: center;
+    }
+
+    .footer {
+        grid-template-columns: 1fr;
+        grid-gap: 10px;
+    }
+
+}
